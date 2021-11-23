@@ -38,7 +38,7 @@ public class BeerDTO {
     private Integer qualityOnHand;
 
     @NotNull
-    private BeerStyleEnum beerStyleEnum;
+    private BeerStyleEnum beerStyle;
 
     @Null
     private OffsetDateTime createdDate;
