@@ -8,6 +8,7 @@ import com.whosaidmeow.msscbeerservice.web.model.BeerDTO;
 import com.whosaidmeow.msscbeerservice.web.model.BeerPagedList;
 import com.whosaidmeow.msscbeerservice.web.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,7 @@ public class BeerServiceImpl implements BeerService {
     private final BeerMapper beerMapper;
     private final BeerRepository beerRepository;
 
+    @Cacheable(cacheNames = "beerCache", key = "#beerId", condition = "#showInventoryOnHand == false")
     @Override
     public BeerDTO getById(UUID beerId, Boolean showInventoryOnHand) {
         if (Boolean.TRUE.equals(showInventoryOnHand)) {
@@ -50,6 +52,7 @@ public class BeerServiceImpl implements BeerService {
         return beerMapper.beerToBeerDTO(beerRepository.save(beer));
     }
 
+    @Cacheable(cacheNames = "beerListCache", condition = "#showInventoryOnHand == false")
     @Override
     public BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, Boolean showInventoryOnHand, PageRequest pageRequest) {
         BeerPagedList beerPagedList;
