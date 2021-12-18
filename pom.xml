@@ -8,25 +8,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.whosaidmeow</groupId>
     <artifactId>mssc-beer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <name>mssc-beer-service</name>
     <description>MSSC Beer Service</description>
 
     <dependencies>
-        <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
-        </dependency>
         <!-- Cache-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
