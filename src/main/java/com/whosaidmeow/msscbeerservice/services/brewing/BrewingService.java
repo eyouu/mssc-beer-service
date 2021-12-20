@@ -1,4 +1,4 @@
-package com.whosaidmeow.msscbeerservice.services;
+package com.whosaidmeow.msscbeerservice.services.brewing;
 
 import com.whosaidmeow.msscbeerservice.domain.Beer;
 import com.whosaidmeow.msscbeerservice.events.BrewBeerEvent;
