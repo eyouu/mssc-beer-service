@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import static com.whosaidmeow.msscbeerservice.config.JmsConfig.BREWING_REQUEST_QUEUE;
 import static com.whosaidmeow.msscbeerservice.config.JmsConfig.NEW_INVENTORY_QUEUE;
@@ -22,6 +23,7 @@ public class BrewBeerListener {
     private final JmsTemplate jmsTemplate;
     private final BeerRepository beerRepository;
 
+    @Transactional
     @JmsListener(destination = BREWING_REQUEST_QUEUE)
     public void listen(BrewBeerEvent brewBeerEvent) {
         BeerDTO beerDTO = brewBeerEvent.getBeerDTO();
