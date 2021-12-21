@@ -3,7 +3,7 @@ package com.whosaidmeow.msscbeerservice.web.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.whosaidmeow.msscbeerservice.bootstrap.BeerLoader;
 import com.whosaidmeow.msscbeerservice.services.BeerService;
-import com.whosaidmeow.msscbeerservice.web.model.BeerDTO;
+import com.whosaidmeow.common.events.BeerDTO;
 import com.whosaidmeow.msscbeerservice.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

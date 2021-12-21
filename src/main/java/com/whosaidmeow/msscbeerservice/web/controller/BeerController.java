@@ -1,7 +1,7 @@
 package com.whosaidmeow.msscbeerservice.web.controller;
 
 import com.whosaidmeow.msscbeerservice.services.BeerService;
-import com.whosaidmeow.msscbeerservice.web.model.BeerDTO;
+import com.whosaidmeow.common.events.BeerDTO;
 import com.whosaidmeow.msscbeerservice.web.model.BeerPagedList;
 import com.whosaidmeow.msscbeerservice.web.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;

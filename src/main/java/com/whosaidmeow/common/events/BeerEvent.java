@@ -1,6 +1,5 @@
-package com.whosaidmeow.msscbeerservice.events;
+package com.whosaidmeow.common.events;
 
-import com.whosaidmeow.msscbeerservice.web.model.BeerDTO;
 import lombok.*;
 
 import java.io.Serializable;

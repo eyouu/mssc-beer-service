@@ -4,7 +4,7 @@ import com.whosaidmeow.msscbeerservice.domain.Beer;
 import com.whosaidmeow.msscbeerservice.repository.BeerRepository;
 import com.whosaidmeow.msscbeerservice.web.controller.NotFoundException;
 import com.whosaidmeow.msscbeerservice.web.mapper.BeerMapper;
-import com.whosaidmeow.msscbeerservice.web.model.BeerDTO;
+import com.whosaidmeow.common.events.BeerDTO;
 import com.whosaidmeow.msscbeerservice.web.model.BeerPagedList;
 import com.whosaidmeow.msscbeerservice.web.model.BeerStyleEnum;
 import lombok.RequiredArgsConstructor;
