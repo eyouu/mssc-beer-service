@@ -1,7 +1,7 @@
-package com.whosaidmeow.common.events;
+package com.whosaidmeow.brewery.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.whosaidmeow.msscbeerservice.web.model.BeerStyleEnum;
+import com.whosaidmeow.brewery.model.BeerStyleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

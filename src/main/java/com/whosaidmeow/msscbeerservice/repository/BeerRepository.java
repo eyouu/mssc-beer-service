@@ -1,11 +1,10 @@
 package com.whosaidmeow.msscbeerservice.repository;
 
 import com.whosaidmeow.msscbeerservice.domain.Beer;
-import com.whosaidmeow.msscbeerservice.web.model.BeerStyleEnum;
+import com.whosaidmeow.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.UUID;
 

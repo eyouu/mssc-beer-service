@@ -1,7 +1,7 @@
 package com.whosaidmeow.msscbeerservice.web.mapper;
 
 import com.whosaidmeow.msscbeerservice.domain.Beer;
-import com.whosaidmeow.common.events.BeerDTO;
+import com.whosaidmeow.brewery.model.BeerDTO;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

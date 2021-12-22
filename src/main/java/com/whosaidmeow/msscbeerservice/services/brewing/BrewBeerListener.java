@@ -1,10 +1,10 @@
 package com.whosaidmeow.msscbeerservice.services.brewing;
 
 import com.whosaidmeow.msscbeerservice.domain.Beer;
-import com.whosaidmeow.common.events.BrewBeerEvent;
-import com.whosaidmeow.common.events.NewInventoryEvent;
+import com.whosaidmeow.brewery.model.events.BrewBeerEvent;
+import com.whosaidmeow.brewery.model.events.NewInventoryEvent;
 import com.whosaidmeow.msscbeerservice.repository.BeerRepository;
-import com.whosaidmeow.common.events.BeerDTO;
+import com.whosaidmeow.brewery.model.BeerDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

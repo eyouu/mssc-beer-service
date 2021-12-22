@@ -1,8 +1,8 @@
 package com.whosaidmeow.msscbeerservice.services;
 
-import com.whosaidmeow.common.events.BeerDTO;
-import com.whosaidmeow.msscbeerservice.web.model.BeerPagedList;
-import com.whosaidmeow.msscbeerservice.web.model.BeerStyleEnum;
+import com.whosaidmeow.brewery.model.BeerDTO;
+import com.whosaidmeow.brewery.model.BeerPagedList;
+import com.whosaidmeow.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 
 import java.util.UUID;

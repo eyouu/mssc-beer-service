@@ -1,5 +1,6 @@
-package com.whosaidmeow.common.events;
+package com.whosaidmeow.brewery.model.events;
 
+import com.whosaidmeow.brewery.model.BeerDTO;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor

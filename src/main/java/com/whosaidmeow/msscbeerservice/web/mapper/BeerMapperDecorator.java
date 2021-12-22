@@ -2,7 +2,7 @@ package com.whosaidmeow.msscbeerservice.web.mapper;
 
 import com.whosaidmeow.msscbeerservice.domain.Beer;
 import com.whosaidmeow.msscbeerservice.services.inventory.BeerInventoryService;
-import com.whosaidmeow.common.events.BeerDTO;
+import com.whosaidmeow.brewery.model.BeerDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class BeerMapperDecorator implements BeerMapper {
