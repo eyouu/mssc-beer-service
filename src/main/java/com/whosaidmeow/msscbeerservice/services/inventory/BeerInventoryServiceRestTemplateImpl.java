@@ -4,6 +4,7 @@ import com.whosaidmeow.msscbeerservice.services.inventory.model.BeerInventoryDTO
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -15,11 +16,12 @@ import java.util.UUID;
 
 import static java.util.Objects.requireNonNull;
 
+@Profile("!local-discovery") // do not instantiate this bean if local-discovery is active
 @Slf4j
 @Component
 public class BeerInventoryServiceRestTemplateImpl implements BeerInventoryService {
 
-    private static final String INVENTORY_PATH = "/api/v1/beer/{beerId}/inventory";
+    public static final String INVENTORY_PATH = "/api/v1/beer/{beerId}/inventory";
 
     @Value("${com.whosaidmeow.inventoryservice.host}")
     private String beerInventoryServiceHost;
