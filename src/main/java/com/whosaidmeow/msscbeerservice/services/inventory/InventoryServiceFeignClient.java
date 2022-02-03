@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 import java.util.UUID;
-
-@FeignClient(name = "inventory-service")
+// fallback -> implementation of case when /inventory-failover is called.
+@FeignClient(name = "inventory-service", fallback = InventoryServiceFeignClientFailover.class)
 public interface InventoryServiceFeignClient {
 
     @RequestMapping(method = RequestMethod.GET, path = BeerInventoryServiceRestTemplateImpl.INVENTORY_PATH)
